@@ -1,0 +1,25 @@
+# ----------------------------------
+# Python cache / build artifacts
+# ----------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# ----------------------------------
+# Virtual environments
+# ----------------------------------
+venv/
+venv311/
+.env
+*.env
+
+# ----------------------------------
+# Jupyter Notebook checkpoints
+# ----------------------------------
+.ipynb_checkpoints/
+
+# ----------------------------------
+# Local data / Kaggle dataset
+# (dataset.csv is usually l

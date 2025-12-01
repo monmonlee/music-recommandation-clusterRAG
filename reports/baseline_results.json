@@ -1,0 +1,959 @@
+[
+  {
+    "query_id": "scenario_01",
+    "category": "情境查詢",
+    "query": "我想找適合清晨散步用的歌",
+    "timestamp": "2025-12-01 17:58:26",
+    "total_time": 13.92,
+    "intent_data": {
+      "intent": "activity",
+      "keywords": [
+        "清晨",
+        "散步",
+        "morning",
+        "walk"
+      ],
+      "numeric_filters": {
+        "tempo_min": 80,
+        "energy_min": null,
+        "danceability_min": null,
+        "valence_min": 0.4,
+        "acousticness_max": null
+      }
+    },
+    "recommendations": [
+      {
+        "track_name": "Sleepwalking in the Rain",
+        "artists": "Chord Overstreet",
+        "track_genre": "acoustic",
+        "energy": 0.381,
+        "danceability": 0.501,
+        "valence": 0.502,
+        "tempo": 80.075,
+        "acousticness": 0.687,
+        "speechiness": 0.036,
+        "popularity": 0.0
+      },
+      {
+        "track_name": "Hopeless Romance",
+        "artists": "Goodnight Fellows",
+        "track_genre": "alternative",
+        "energy": 0.349,
+        "danceability": 0.643,
+        "valence": 0.798,
+        "tempo": 171.993,
+        "acousticness": 0.0329,
+        "speechiness": 0.0406,
+        "popularity": 36.0
+      },
+      {
+        "track_name": "4am",
+        "artists": "Eden Elf;Ren Avel",
+        "track_genre": "acoustic",
+        "energy": 0.329,
+        "danceability": 0.638,
+        "valence": 0.475,
+        "tempo": 94.125,
+        "acousticness": 0.979,
+        "speechiness": 0.0422,
+        "popularity": 49.0
+      },
+      {
+        "track_name": "Hopeless Romance",
+        "artists": "Goodnight Fellows",
+        "track_genre": "alt-rock",
+        "energy": 0.349,
+        "danceability": 0.643,
+        "valence": 0.798,
+        "tempo": 171.993,
+        "acousticness": 0.0329,
+        "speechiness": 0.0406,
+        "popularity": 36.0
+      },
+      {
+        "track_name": "Walking Target",
+        "artists": "Fitz and The Tantrums",
+        "track_genre": "alternative",
+        "energy": 0.956,
+        "danceability": 0.65,
+        "valence": 0.673,
+        "tempo": 104.018,
+        "acousticness": 0.0153,
+        "speechiness": 0.0564,
+        "popularity": 0.0
+      }
+    ],
+    "explanation": "為您推薦以下適合清晨散步的歌曲：\n\n## 🌅 溫和開始系列\n**Sleepwalking in the Rain - Chord Overstreet**\n這首acoustic風格的歌曲節奏輕柔（80 BPM），能量適中，非常適合剛起床時的悠閒散步，讓您慢慢喚醒身體。\n\n**4am - Eden Elf;Ren Avel**\n同樣是acoustic風格，94 BPM的節奏恰到好處，歌名就很符合清晨時光，適合在寧靜的早晨中細細品味。\n\n## 🚶‍♀️ 輕快步伐系列\n**Hopeless Romance - Goodnight Fellows**\n這首歌有著不錯的正面情緒（0.80），172 BPM能為您的散步帶來輕快的節奏感，讓早晨充滿活力。\n\n## ⚡ 活力滿滿\n**Walking Target - Fitz and The Tantrums**\n如果想要更有動力的散步體驗，這首歌的高能量（0.96）和適中的速度（104 BPM）能讓您步伐更有力，為新的一天注入滿滿活力！\n\n建議您可以從溫和的歌曲開始，隨著身體逐漸甦醒，再切換到更有活力的曲目 🎵",
+    "metrics": {
+      "has_duplicates": true,
+      "diversity_score": 0.7,
+      "artist_diversity": 0.8,
+      "genre_diversity": 0.6,
+      "feature_variance": 0.51,
+      "feature_match_score": 0.67
+    },
+    "expected_features": {
+      "energy": [
+        0.2,
+        0.6
+      ],
+      "valence": [
+        0.4,
+        0.8
+      ],
+      "tempo": [
+        80,
+        120
+      ]
+    },
+    "notes": "應該推薦輕快但不激烈的歌"
+  },
+  {
+    "query_id": "scenario_02",
+    "category": "情境查詢",
+    "query": "深夜讀書專注用的音樂",
+    "timestamp": "2025-12-01 17:58:40",
+    "total_time": 13.32,
+    "intent_data": {
+      "intent": "activity",
+      "keywords": [
+        "深夜",
+        "讀書",
+        "專注",
+        "學習",
+        "安靜"
+      ],
+      "numeric_filters": {
+        "tempo_min": null,
+        "energy_min": null,
+        "danceability_min": null,
+        "valence_min": null,
+        "acousticness_max": null
+      }
+    },
+    "recommendations": [
+      {
+        "track_name": "Nightbook",
+        "artists": "Ludovico Einaudi",
+        "track_genre": "ambient",
+        "energy": 0.289,
+        "danceability": 0.603,
+        "valence": 0.194,
+        "tempo": 123.978,
+        "acousticness": 0.971,
+        "speechiness": 0.0394,
+        "popularity": 49.0
+      },
+      {
+        "track_name": "Nocturnal",
+        "artists": "Joep Beving",
+        "track_genre": "ambient",
+        "energy": 0.0153,
+        "danceability": 0.219,
+        "valence": 0.1,
+        "tempo": 57.439,
+        "acousticness": 0.994,
+        "speechiness": 0.0346,
+        "popularity": 54.0
+      },
+      {
+        "track_name": "Night",
+        "artists": "Ludovico Einaudi;Amsterdam Sinfonietta",
+        "track_genre": "ambient",
+        "energy": 0.179,
+        "danceability": 0.21,
+        "valence": 0.06,
+        "tempo": 106.705,
+        "acousticness": 0.962,
+        "speechiness": 0.0341,
+        "popularity": 56.0
+      },
+      {
+        "track_name": "Deep Sleep, Pt. 1",
+        "artists": "Liquid Mind",
+        "track_genre": "ambient",
+        "energy": 0.126,
+        "danceability": 0.156,
+        "valence": 0.0341,
+        "tempo": 74.775,
+        "acousticness": 0.965,
+        "speechiness": 0.0389,
+        "popularity": 26.0
+      },
+      {
+        "track_name": "The Night Café",
+        "artists": "Clint Mansell",
+        "track_genre": "ambient",
+        "energy": 0.309,
+        "danceability": 0.337,
+        "valence": 0.0356,
+        "tempo": 113.48,
+        "acousticness": 0.973,
+        "speechiness": 0.035,
+        "popularity": 44.0
+      }
+    ],
+    "explanation": "為您推薦這些非常適合深夜讀書的音樂：\n\n## 🌙 深夜讀書音樂推薦\n\n**最佳專注選擇：**\n- **Nocturnal - Joep Beving** 和 **Deep Sleep, Pt. 1 - Liquid Mind** 是您的最佳夥伴！這兩首曲子節奏極其緩慢平穩，不會干擾思緒，讓您完全沉浸在書本世界中。\n\n**溫和陪伴：**\n- **Night - Ludovico Einaudi** 帶有管弦樂的溫暖質感，營造寧靜的夜晚氛圍，適合需要一點音樂陪伴但不想被打擾的時刻。\n\n**輕柔背景：**\n- **Nightbook - Ludovico Einaudi** 和 **The Night Café - Clint Mansell** 雖然稍微有一點節奏感，但依然保持低調，適合作為閱讀時的輕柔背景音樂。\n\n這些ambient音樂都具有**低能量、慢節奏**的特質，不會搶奪您的注意力，反而能幫助您保持專注，在深夜時光中享受純粹的閱讀樂趣。建議音量調至較低，讓音樂成為您思考的溫柔陪伴。📚✨",
+    "metrics": {
+      "has_duplicates": false,
+      "diversity_score": 0.6,
+      "artist_diversity": 1.0,
+      "genre_diversity": 0.2,
+      "feature_variance": 0.59,
+      "feature_match_score": 1.0
+    },
+    "expected_features": {
+      "energy": [
+        0.1,
+        0.4
+      ],
+      "acousticness": [
+        0.5,
+        1.0
+      ],
+      "speechiness": [
+        0.0,
+        0.2
+      ]
+    },
+    "notes": "應該安靜、器樂為主、避免分心"
+  },
+  {
+    "query_id": "scenario_03",
+    "category": "情境查詢",
+    "query": "運動健身時聽的快歌",
+    "timestamp": "2025-12-01 17:58:53",
+    "total_time": 11.95,
+    "intent_data": {
+      "intent": "activity",
+      "keywords": [
+        "運動",
+        "健身",
+        "快歌"
+      ],
+      "numeric_filters": {
+        "tempo_min": 120,
+        "energy_min": 0.7,
+        "danceability_min": 0.6,
+        "valence_min": 0.6,
+        "acousticness_max": 0.3
+      }
+    },
+    "recommendations": [
+      {
+        "track_name": "Move on Up",
+        "artists": "The Dynamics",
+        "track_genre": "afrobeat",
+        "energy": 0.709,
+        "danceability": 0.836,
+        "valence": 0.969,
+        "tempo": 145.952,
+        "acousticness": 0.154,
+        "speechiness": 0.0352,
+        "popularity": 53.0
+      },
+      {
+        "track_name": "Move on Up",
+        "artists": "The Dynamics",
+        "track_genre": "afrobeat",
+        "energy": 0.769,
+        "danceability": 0.845,
+        "valence": 0.969,
+        "tempo": 145.985,
+        "acousticness": 0.146,
+        "speechiness": 0.036,
+        "popularity": 48.0
+      }
+    ],
+    "explanation": "🎵 **為你推薦這首運動神曲！**\n\n**Move on Up - The Dynamics**\n這首 Afrobeat 風格的歌曲絕對是健身房的完美夥伴！\n\n✨ **推薦理由：**\n- **節奏超強**：0.84 的節奏感讓你每一下動作都能跟上拍子\n- **能量爆棚**：0.77 的高能量值，瞬間點燃你的運動熱情\n- **速度剛好**：146 BPM 的節拍，無論是跑步、重訓還是有氧都很適合\n- **正能量滿滿**：0.97 的超高正面情緒指數，讓你越動越開心！\n\n這首歌的 Afrobeat 風格帶有濃厚的律動感，能讓你在運動時保持穩定的節奏，同時那股向上的能量會推著你突破極限。特別適合需要持續動力的訓練項目！\n\n準備好跟著節拍燃燒卡路里了嗎？🔥",
+    "metrics": {
+      "has_duplicates": true,
+      "diversity_score": 0.5,
+      "artist_diversity": 0.5,
+      "genre_diversity": 0.5,
+      "feature_variance": 0.04,
+      "feature_match_score": 1.0
+    },
+    "expected_features": {
+      "energy": [
+        0.7,
+        1.0
+      ],
+      "tempo": [
+        120,
+        180
+      ],
+      "danceability": [
+        0.6,
+        1.0
+      ]
+    },
+    "notes": "應該高能量、節奏明確"
+  },
+  {
+    "query_id": "direct_01",
+    "category": "直接查詢",
+    "query": "Taylor Swift 的歌",
+    "timestamp": "2025-12-01 17:59:07",
+    "total_time": 13.48,
+    "intent_data": {
+      "intent": "artist",
+      "keywords": [
+        "Taylor Swift"
+      ],
+      "numeric_filters": {
+        "tempo_min": null,
+        "energy_min": null,
+        "danceability_min": null,
+        "valence_min": null,
+        "acousticness_max": null
+      }
+    },
+    "recommendations": [
+      {
+        "track_name": "Teenage Dream",
+        "artists": "Sara Farell",
+        "track_genre": "acoustic",
+        "energy": 0.0776,
+        "danceability": 0.53,
+        "valence": 0.282,
+        "tempo": 179.911,
+        "acousticness": 0.937,
+        "speechiness": 0.0462,
+        "popularity": 48.0
+      },
+      {
+        "track_name": "Dancing With A Stranger",
+        "artists": "Sara Farell",
+        "track_genre": "acoustic",
+        "energy": 0.18,
+        "danceability": 0.595,
+        "valence": 0.261,
+        "tempo": 79.922,
+        "acousticness": 0.89,
+        "speechiness": 0.0298,
+        "popularity": 43.0
+      },
+      {
+        "track_name": "How To Lose a Girl",
+        "artists": "Tyler Ward",
+        "track_genre": "acoustic",
+        "energy": 0.454,
+        "danceability": 0.7,
+        "valence": 0.34,
+        "tempo": 80.011,
+        "acousticness": 0.55,
+        "speechiness": 0.0388,
+        "popularity": 46.0
+      },
+      {
+        "track_name": "All Too Well - Jake's Version",
+        "artists": "John Elliott",
+        "track_genre": "acoustic",
+        "energy": 0.483,
+        "danceability": 0.685,
+        "valence": 0.331,
+        "tempo": 93.032,
+        "acousticness": 0.0772,
+        "speechiness": 0.0253,
+        "popularity": 33.0
+      },
+      {
+        "track_name": "Love Song",
+        "artists": "Sara Bareilles",
+        "track_genre": "acoustic",
+        "energy": 0.786,
+        "danceability": 0.583,
+        "valence": 0.573,
+        "tempo": 123.055,
+        "acousticness": 0.0208,
+        "speechiness": 0.0301,
+        "popularity": 73.0
+      }
+    ],
+    "explanation": "雖然這些不是 Taylor Swift 的原唱歌曲，但我為你找到了一些很棒的相關推薦！\n\n**特別推薦：**\n- **All Too Well - Jake's Version** - 這是 Taylor Swift 經典歌曲的翻唱版本，保持了原曲深刻的情感表達，acoustic 風格讓歌曲更加溫柔動人\n\n**如果你喜歡 Taylor Swift，你可能也會愛上：**\n\n🎵 **Love Song - Sara Bareilles** - 能量滿滿且情緒正面，有著類似 Taylor 早期作品的甜美感覺\n\n🎵 **How To Lose a Girl - Tyler Ward** - 節奏感很棒，acoustic 編排讓故事性歌詞更突出，很符合 Taylor 的敘事風格\n\n🎵 **Teenage Dream & Dancing With A Stranger - Sara Farell** - 這兩首都有著溫柔的 acoustic 質感，適合喜歡 Taylor Swift 抒情作品的你\n\n這些歌曲都是 acoustic 風格，保持了 Taylor Swift 音樂中那種親密、真誠的感覺。建議從 \"All Too Well\" 開始聽起！",
+    "metrics": {
+      "has_duplicates": false,
+      "diversity_score": 0.5,
+      "artist_diversity": 0.8,
+      "genre_diversity": 0.2,
+      "feature_variance": 0.63,
+      "feature_match_score": 0.0
+    },
+    "expected_features": {
+      "artist_match": "Taylor Swift"
+    },
+    "notes": "應該只返回 Taylor Swift 的歌"
+  },
+  {
+    "query_id": "direct_02",
+    "category": "直接查詢",
+    "query": "搖滾音樂",
+    "timestamp": "2025-12-01 17:59:21",
+    "total_time": 14.07,
+    "intent_data": {
+      "intent": "genre",
+      "keywords": [
+        "搖滾",
+        "rock"
+      ],
+      "numeric_filters": {
+        "tempo_min": 120,
+        "energy_min": 0.7,
+        "danceability_min": null,
+        "valence_min": null,
+        "acousticness_max": 0.3
+      }
+    },
+    "recommendations": [
+      {
+        "track_name": "Rock and Roll",
+        "artists": "The Velvet Underground",
+        "track_genre": "alternative",
+        "energy": 0.738,
+        "danceability": 0.494,
+        "valence": 0.735,
+        "tempo": 132.496,
+        "acousticness": 0.00394,
+        "speechiness": 0.0345,
+        "popularity": 0.0
+      },
+      {
+        "track_name": "Rock and Roll",
+        "artists": "The Velvet Underground",
+        "track_genre": "alt-rock",
+        "energy": 0.738,
+        "danceability": 0.494,
+        "valence": 0.735,
+        "tempo": 132.496,
+        "acousticness": 0.00394,
+        "speechiness": 0.0345,
+        "popularity": 0.0
+      },
+      {
+        "track_name": "Dragula",
+        "artists": "Rob Zombie",
+        "track_genre": "alt-rock",
+        "energy": 0.978,
+        "danceability": 0.579,
+        "valence": 0.558,
+        "tempo": 125.073,
+        "acousticness": 8.55e-05,
+        "speechiness": 0.0548,
+        "popularity": 0.0
+      },
+      {
+        "track_name": "Buddy Holly",
+        "artists": "Weezer",
+        "track_genre": "alternative",
+        "energy": 0.921,
+        "danceability": 0.555,
+        "valence": 0.775,
+        "tempo": 121.141,
+        "acousticness": 0.00264,
+        "speechiness": 0.0369,
+        "popularity": 2.0
+      },
+      {
+        "track_name": "Love Will Tear Us Apart",
+        "artists": "Joy Division",
+        "track_genre": "alternative",
+        "energy": 0.902,
+        "danceability": 0.524,
+        "valence": 0.907,
+        "tempo": 146.833,
+        "acousticness": 0.000989,
+        "speechiness": 0.0368,
+        "popularity": 0.0
+      }
+    ],
+    "explanation": "🎸 **搖滾音樂推薦清單** 🎸\n\n根據您對搖滾音樂的喜好，我為您精選了這些經典作品：\n\n**🔥 經典必聽**\n- **Rock and Roll - The Velvet Underground**：搖滾樂的經典之作！高能量（0.74）配上正面情緒（0.73），是體驗純正搖滾精神的完美選擇。\n\n**⚡ 重磅震撼**\n- **Dragula - Rob Zombie**：超高能量值（0.98）的重型搖滾，強烈的節拍和工業搖滾風格，絕對讓您血脈賁張！\n\n**🎵 流行搖滾**\n- **Buddy Holly - Weezer**：另類搖滾的代表作，能量滿滿（0.92）又充滿正面情緒（0.78），旋律朗朗上口，是搖滾入門的絕佳選擇。\n\n**🖤 深度體驗**\n- **Love Will Tear Us Apart - Joy Division**：後朋克經典，雖然歌名憂鬱但音樂能量極高（0.90），展現了搖滾音樂的另一種深度和情感層次。\n\n這些歌曲涵蓋了從經典搖滾到另類搖滾的不同風格，都具有高能量特質，完美詮釋了搖滾音樂的魅力！🤘",
+    "metrics": {
+      "has_duplicates": true,
+      "diversity_score": 0.6,
+      "artist_diversity": 0.8,
+      "genre_diversity": 0.4,
+      "feature_variance": 0.12,
+      "feature_match_score": 1.0
+    },
+    "expected_features": {
+      "genre_contains": [
+        "rock",
+        "alt-rock",
+        "hard-rock"
+      ]
+    },
+    "notes": "應該返回搖滾類型"
+  },
+  {
+    "query_id": "direct_03",
+    "category": "直接查詢",
+    "query": "acoustic 風格的歌",
+    "timestamp": "2025-12-01 17:59:36",
+    "total_time": 14.52,
+    "intent_data": {
+      "intent": "genre",
+      "keywords": [
+        "acoustic"
+      ],
+      "numeric_filters": {
+        "tempo_min": null,
+        "energy_min": null,
+        "danceability_min": null,
+        "valence_min": null,
+        "acousticness_max": null
+      }
+    },
+    "recommendations": [
+      {
+        "track_name": "純風",
+        "artists": "Kazuyoshi Saito",
+        "track_genre": "acoustic",
+        "energy": 0.868,
+        "danceability": 0.731,
+        "valence": 0.975,
+        "tempo": 111.154,
+        "acousticness": 0.111,
+        "speechiness": 0.0271,
+        "popularity": 27.0
+      },
+      {
+        "track_name": "Symphony - Acoustic",
+        "artists": "Thomas Daniel",
+        "track_genre": "acoustic",
+        "energy": 0.208,
+        "danceability": 0.359,
+        "valence": 0.105,
+        "tempo": 83.155,
+        "acousticness": 0.943,
+        "speechiness": 0.036,
+        "popularity": 49.0
+      },
+      {
+        "track_name": "Mood - Acoustic",
+        "artists": "Adam Christopher",
+        "track_genre": "acoustic",
+        "energy": 0.29,
+        "danceability": 0.751,
+        "valence": 0.683,
+        "tempo": 75.034,
+        "acousticness": 0.846,
+        "speechiness": 0.0456,
+        "popularity": 50.0
+      },
+      {
+        "track_name": "Ghost - Acoustic",
+        "artists": "Jonah Baker",
+        "track_genre": "acoustic",
+        "energy": 0.0745,
+        "danceability": 0.486,
+        "valence": 0.396,
+        "tempo": 145.912,
+        "acousticness": 0.922,
+        "speechiness": 0.0599,
+        "popularity": 42.0
+      },
+      {
+        "track_name": "Ghost - Acoustic",
+        "artists": "Ben Woodward",
+        "track_genre": "acoustic",
+        "energy": 0.166,
+        "danceability": 0.42,
+        "valence": 0.267,
+        "tempo": 77.489,
+        "acousticness": 0.924,
+        "speechiness": 0.0763,
+        "popularity": 55.0
+      }
+    ],
+    "explanation": "為您推薦這些精選的 acoustic 風格歌曲！🎸\n\n**《純風》- Kazuyoshi Saito**\n這首歌充滿活力和正面能量，是 acoustic 風格中難得的高能量作品。溫暖的吉他聲配上積極的情緒，非常適合想要振奮心情的時候聆聽。\n\n**《Symphony - Acoustic》- Thomas Daniel**\n一首非常純粹的 acoustic 慢歌，低調而深沉的情感表達，適合安靜的夜晚或需要沉澱心情的時刻。\n\n**《Mood - Acoustic》- Adam Christopher**\n節奏感很棒的 acoustic 作品，在輕鬆的氛圍中帶有一定的律動感，情緒溫和正面，很適合日常放鬆時光。\n\n**《Ghost - Acoustic》- Jonah Baker**\n雖然速度較快但能量很輕柔，營造出一種飄渺的氛圍感，是很有特色的 acoustic 演繹。\n\n**《Ghost - Acoustic》- Ben Woodward**\n另一個版本的《Ghost》，更加內斂和沉靜，慢節奏的吉他彈奏帶來寧靜的聽覺體驗。\n\n這些歌曲涵蓋了 acoustic 風格的不同面向，從活力四射到深沉內省，相信能滿足您對 acoustic 音樂的各種心情需求！🎵",
+    "metrics": {
+      "has_duplicates": false,
+      "diversity_score": 0.6,
+      "artist_diversity": 1.0,
+      "genre_diversity": 0.2,
+      "feature_variance": 0.88,
+      "feature_match_score": 1.0
+    },
+    "expected_features": {
+      "genre_contains": [
+        "acoustic"
+      ],
+      "acousticness": [
+        0.5,
+        1.0
+      ]
+    },
+    "notes": "應該返回原聲風格"
+  },
+  {
+    "query_id": "mood_01",
+    "category": "情緒查詢",
+    "query": "心情低落想聽療癒的歌",
+    "timestamp": "2025-12-01 17:59:51",
+    "total_time": 13.83,
+    "intent_data": {
+      "intent": "mood",
+      "keywords": [
+        "療癒",
+        "心情低落",
+        "舒緩"
+      ],
+      "numeric_filters": {
+        "tempo_min": null,
+        "energy_min": null,
+        "danceability_min": null,
+        "valence_min": 0.3,
+        "acousticness_max": null
+      }
+    },
+    "recommendations": [
+      {
+        "track_name": "broken",
+        "artists": "lovelytheband",
+        "track_genre": "alternative",
+        "energy": 0.728,
+        "danceability": 0.666,
+        "valence": 0.51,
+        "tempo": 122.996,
+        "acousticness": 0.00175,
+        "speechiness": 0.0419,
+        "popularity": 70.0
+      },
+      {
+        "track_name": "broken",
+        "artists": "lovelytheband",
+        "track_genre": "alt-rock",
+        "energy": 0.728,
+        "danceability": 0.666,
+        "valence": 0.51,
+        "tempo": 122.996,
+        "acousticness": 0.00175,
+        "speechiness": 0.0419,
+        "popularity": 70.0
+      },
+      {
+        "track_name": "Hopeless Romance",
+        "artists": "Goodnight Fellows",
+        "track_genre": "alternative",
+        "energy": 0.349,
+        "danceability": 0.643,
+        "valence": 0.798,
+        "tempo": 171.993,
+        "acousticness": 0.0329,
+        "speechiness": 0.0406,
+        "popularity": 36.0
+      },
+      {
+        "track_name": "The Remedy (I Won't Worry)",
+        "artists": "Jason Mraz",
+        "track_genre": "acoustic",
+        "energy": 0.867,
+        "danceability": 0.589,
+        "valence": 0.795,
+        "tempo": 94.52,
+        "acousticness": 0.041,
+        "speechiness": 0.0385,
+        "popularity": 60.0
+      },
+      {
+        "track_name": "Hopeless Romance",
+        "artists": "Goodnight Fellows",
+        "track_genre": "alt-rock",
+        "energy": 0.349,
+        "danceability": 0.643,
+        "valence": 0.798,
+        "tempo": 171.993,
+        "acousticness": 0.0329,
+        "speechiness": 0.0406,
+        "popularity": 36.0
+      }
+    ],
+    "explanation": "看到你心情低落，我為你挑選了幾首很棒的療癒歌曲：\n\n🎵 **\"broken\" - lovelytheband**\n這首歌很適合現在的你！雖然歌名叫\"broken\"，但它有著溫和的正面能量，不會讓你更沮喪，反而能陪伴你度過低潮期。\n\n🎵 **\"The Remedy (I Won't Worry)\" - Jason Mraz**\nJason Mraz的溫暖嗓音配上木吉他，充滿正面能量（0.80分）！歌名就告訴我們「不要擔心」，是很好的心靈良藥。\n\n🎵 **\"Hopeless Romance\" - Goodnight Fellows**\n這首歌有著很高的正面情緒指數，雖然能量較為柔和，但能溫柔地撫慰你的心情，讓你慢慢感受到希望。\n\n這些歌曲都有一個共同點：它們不會強迫你立刻開心起來，而是用溫暖的旋律陪伴你，讓療癒自然發生。建議你找個舒適的地方，靜靜聆聽，讓音樂慢慢撫平心中的不安 💙\n\n希望這些歌能帶給你一些安慰！",
+    "metrics": {
+      "has_duplicates": true,
+      "diversity_score": 0.6,
+      "artist_diversity": 0.6,
+      "genre_diversity": 0.6,
+      "feature_variance": 0.35,
+      "feature_match_score": 0.5
+    },
+    "expected_features": {
+      "valence": [
+        0.3,
+        0.7
+      ],
+      "energy": [
+        0.2,
+        0.5
+      ]
+    },
+    "notes": "不要太悲傷也不要太歡樂，溫和療癒"
+  },
+  {
+    "query_id": "mood_02",
+    "category": "情緒查詢",
+    "query": "開心愉快的歌",
+    "timestamp": "2025-12-01 18:00:04",
+    "total_time": 13.12,
+    "intent_data": {
+      "intent": "mood",
+      "keywords": [
+        "開心",
+        "愉快"
+      ],
+      "numeric_filters": {
+        "tempo_min": 120,
+        "energy_min": 0.6,
+        "danceability_min": 0.5,
+        "valence_min": 0.7,
+        "acousticness_max": null
+      }
+    },
+    "recommendations": [
+      {
+        "track_name": "Felicidad",
+        "artists": "Gondwana",
+        "track_genre": "alternative",
+        "energy": 0.666,
+        "danceability": 0.744,
+        "valence": 0.806,
+        "tempo": 143.645,
+        "acousticness": 0.00147,
+        "speechiness": 0.0507,
+        "popularity": 0.0
+      },
+      {
+        "track_name": "Happy",
+        "artists": "Speedometer",
+        "track_genre": "afrobeat",
+        "energy": 0.613,
+        "danceability": 0.59,
+        "valence": 0.868,
+        "tempo": 147.171,
+        "acousticness": 0.394,
+        "speechiness": 0.0347,
+        "popularity": 22.0
+      },
+      {
+        "track_name": "Felicidad",
+        "artists": "Gondwana",
+        "track_genre": "alt-rock",
+        "energy": 0.666,
+        "danceability": 0.744,
+        "valence": 0.806,
+        "tempo": 143.645,
+        "acousticness": 0.00147,
+        "speechiness": 0.0507,
+        "popularity": 0.0
+      },
+      {
+        "track_name": "Feel Good Inc.",
+        "artists": "Gorillaz",
+        "track_genre": "alternative",
+        "energy": 0.705,
+        "danceability": 0.818,
+        "valence": 0.772,
+        "tempo": 138.559,
+        "acousticness": 0.00836,
+        "speechiness": 0.177,
+        "popularity": 84.0
+      },
+      {
+        "track_name": "Are You Satisfied?",
+        "artists": "MARINA",
+        "track_genre": "alternative",
+        "energy": 0.712,
+        "danceability": 0.669,
+        "valence": 0.843,
+        "tempo": 124.009,
+        "acousticness": 0.303,
+        "speechiness": 0.0412,
+        "popularity": 71.0
+      }
+    ],
+    "explanation": "🎵 **為你推薦這些開心愉快的歌曲！**\n\n**🌟 最推薦：Happy - Speedometer**\n這首 Afrobeat 風格的歌曲正面情緒指數高達 0.87，光聽歌名就知道是專為快樂而生的！節奏輕快，絕對能讓你心情飛揚。\n\n**🎸 活力滿滿：Feel Good Inc. - Gorillaz**\n經典的 Gorillaz 作品，高能量（0.70）配上強烈節奏感（0.82），是那種一聽就想跟著搖擺的好心情歌曲。\n\n**☀️ 拉丁陽光：Felicidad - Gondwana**\n「Felicidad」在西班牙文就是「幸福」的意思！這首歌有著溫暖的能量和穩定的節拍，讓人感受到純粹的快樂。\n\n**💫 獨特魅力：Are You Satisfied? - MARINA**\n雖然歌名是疑問句，但這首歌的正面情緒指數達 0.84，MARINA 獨特的聲線會帶給你意想不到的愉悅感受。\n\n這些歌曲都有一個共同點：**高正面情緒指數**和**適中的節奏感**，完美符合你想要的開心愉快氛围！🎶",
+    "metrics": {
+      "has_duplicates": true,
+      "diversity_score": 0.7,
+      "artist_diversity": 0.8,
+      "genre_diversity": 0.6,
+      "feature_variance": 0.05,
+      "feature_match_score": 1.0
+    },
+    "expected_features": {
+      "valence": [
+        0.7,
+        1.0
+      ]
+    },
+    "notes": "應該正面情緒高"
+  },
+  {
+    "query_id": "vague_01",
+    "category": "模糊查詢",
+    "query": "放鬆的音樂",
+    "timestamp": "2025-12-01 18:00:17",
+    "total_time": 12.21,
+    "intent_data": {
+      "intent": "mood",
+      "keywords": [
+        "放鬆",
+        "輕鬆",
+        "舒緩",
+        "平靜"
+      ],
+      "numeric_filters": {
+        "tempo_min": null,
+        "energy_min": null,
+        "danceability_min": null,
+        "valence_min": 0.3,
+        "acousticness_max": null
+      }
+    },
+    "recommendations": [
+      {
+        "track_name": "Way Down We Go",
+        "artists": "KALEO",
+        "track_genre": "alternative",
+        "energy": 0.506,
+        "danceability": 0.492,
+        "valence": 0.338,
+        "tempo": 163.522,
+        "acousticness": 0.58,
+        "speechiness": 0.118,
+        "popularity": 1.0
+      },
+      {
+        "track_name": "Way Down We Go",
+        "artists": "KALEO",
+        "track_genre": "alt-rock",
+        "energy": 0.506,
+        "danceability": 0.492,
+        "valence": 0.338,
+        "tempo": 163.522,
+        "acousticness": 0.58,
+        "speechiness": 0.118,
+        "popularity": 1.0
+      },
+      {
+        "track_name": "7 Years",
+        "artists": "Eric Lumiere",
+        "track_genre": "acoustic",
+        "energy": 0.268,
+        "danceability": 0.662,
+        "valence": 0.394,
+        "tempo": 111.594,
+        "acousticness": 0.858,
+        "speechiness": 0.0358,
+        "popularity": 27.0
+      },
+      {
+        "track_name": "Life Goes On",
+        "artists": "Oliver Tree",
+        "track_genre": "alternative",
+        "energy": 0.49,
+        "danceability": 0.7,
+        "valence": 0.569,
+        "tempo": 79.982,
+        "acousticness": 0.186,
+        "speechiness": 0.076,
+        "popularity": 2.0
+      },
+      {
+        "track_name": "Placeholder",
+        "artists": "Oliver Tree",
+        "track_genre": "alternative",
+        "energy": 0.696,
+        "danceability": 0.678,
+        "valence": 0.421,
+        "tempo": 82.489,
+        "acousticness": 0.0346,
+        "speechiness": 0.0336,
+        "popularity": 4.0
+      }
+    ],
+    "explanation": "根據您對「放鬆的音樂」的需求，我為您推薦以下幾首歌曲：\n\n🎵 **最推薦放鬆聆聽：**\n- **7 Years - Eric Lumiere**：這首acoustic風格的歌曲能量較低(0.27)，速度適中(112 BPM)，非常適合放鬆時光\n- **Life Goes On - Oliver Tree**：慢節奏(80 BPM)搭配適中的能量感，帶有一些正面情緒，很適合舒緩心情\n\n🎶 **適合安靜時刻：**\n- **Way Down We Go - KALEO**：雖然是alternative/alt-rock風格，但能量適中(0.51)，正面情緒較低(0.34)，營造出沉靜的氛圍\n\n⚠️ **需要注意：**\n- **Placeholder - Oliver Tree** 的能量值較高(0.70)，可能不太符合完全放鬆的需求，但如果您喜歡稍微有活力一點的放鬆音樂，也可以嘗試\n\n建議您從 **7 Years** 和 **Life Goes On** 開始聽起，它們的慢節奏和溫和特質最符合放鬆音樂的需求！",
+    "metrics": {
+      "has_duplicates": true,
+      "diversity_score": 0.6,
+      "artist_diversity": 0.6,
+      "genre_diversity": 0.6,
+      "feature_variance": 0.28,
+      "feature_match_score": 1.0
+    },
+    "expected_features": {
+      "energy": [
+        0.1,
+        0.5
+      ],
+      "valence": [
+        0.4,
+        0.8
+      ]
+    },
+    "notes": "應該低能量、正向但不激昂"
+  },
+  {
+    "query_id": "vague_02",
+    "category": "模糊查詢",
+    "query": "派對用的電子音樂",
+    "timestamp": "2025-12-01 18:00:29",
+    "total_time": 11.33,
+    "intent_data": {
+      "intent": "activity",
+      "keywords": [
+        "派對",
+        "電子音樂",
+        "electronic",
+        "party"
+      ],
+      "numeric_filters": {
+        "tempo_min": 120,
+        "energy_min": 0.7,
+        "danceability_min": 0.7,
+        "valence_min": 0.6,
+        "acousticness_max": 0.3
+      }
+    },
+    "recommendations": [
+      {
+        "track_name": "Daft Punk Is Playing at My House",
+        "artists": "LCD Soundsystem",
+        "track_genre": "alt-rock",
+        "energy": 0.839,
+        "danceability": 0.922,
+        "valence": 0.977,
+        "tempo": 135.997,
+        "acousticness": 0.0195,
+        "speechiness": 0.0502,
+        "popularity": 0.0
+      }
+    ],
+    "explanation": "🎉 **派對音樂推薦**\n\n**LCD Soundsystem - \"Daft Punk Is Playing at My House\"**\n\n這首歌絕對是派對的完美選擇！雖然歸類為另類搖滾，但它融合了濃厚的電子元素，創造出獨特的舞池氛圍。\n\n**為什麼適合你的派對：**\n- 🔥 **超高能量** (0.84/1.0) - 瞬間點燃現場氣氛\n- 💃 **強烈節奏感** (0.92/1.0) - 讓人忍不住跟著律動\n- ⚡ **中快節拍** (136 BPM) - 完美的舞蹈速度\n- 😄 **極度正面** (0.98/1.0) - 保證讓大家心情high到最高點\n\n這首歌結合了搖滾的力量和電子音樂的律動感，是那種一播放就能讓整個派對嗨起來的經典曲目。特別適合想要營造既有深度又充滿活力的派對氛圍！",
+    "metrics": {
+      "has_duplicates": false,
+      "diversity_score": 1.0,
+      "artist_diversity": 1.0,
+      "genre_diversity": 1.0,
+      "feature_variance": 0,
+      "feature_match_score": 0.67
+    },
+    "expected_features": {
+      "energy": [
+        0.7,
+        1.0
+      ],
+      "danceability": [
+        0.7,
+        1.0
+      ],
+      "genre_contains": [
+        "electronic",
+        "edm",
+        "dance"
+      ]
+    },
+    "notes": "高能量、適合跳舞"
+  }
+]

@@ -1,0 +1,104 @@
+{
+    "情境查詢": [
+      {
+        "id": "scenario_01",
+        "query": "我想找適合清晨散步用的歌",
+        "expected_features": {
+          "energy": [0.2, 0.6],
+          "valence": [0.4, 0.8],
+          "tempo": [80, 120]
+        },
+        "notes": "應該推薦輕快但不激烈的歌"
+      },
+      {
+        "id": "scenario_02",
+        "query": "深夜讀書專注用的音樂",
+        "expected_features": {
+          "energy": [0.1, 0.4],
+          "acousticness": [0.5, 1.0],
+          "speechiness": [0.0, 0.2]
+        },
+        "notes": "應該安靜、器樂為主、避免分心"
+      },
+      {
+        "id": "scenario_03",
+        "query": "運動健身時聽的快歌",
+        "expected_features": {
+          "energy": [0.7, 1.0],
+          "tempo": [120, 180],
+          "danceability": [0.6, 1.0]
+        },
+        "notes": "應該高能量、節奏明確"
+      }
+    ],
+    
+    "直接查詢": [
+      {
+        "id": "direct_01",
+        "query": "Taylor Swift 的歌",
+        "expected_features": {
+          "artist_match": "Taylor Swift"
+        },
+        "notes": "應該只返回 Taylor Swift 的歌"
+      },
+      {
+        "id": "direct_02",
+        "query": "搖滾音樂",
+        "expected_features": {
+          "genre_contains": ["rock", "alt-rock", "hard-rock"]
+        },
+        "notes": "應該返回搖滾類型"
+      },
+      {
+        "id": "direct_03",
+        "query": "acoustic 風格的歌",
+        "expected_features": {
+          "genre_contains": ["acoustic"],
+          "acousticness": [0.5, 1.0]
+        },
+        "notes": "應該返回原聲風格"
+      }
+    ],
+    
+    "情緒查詢": [
+      {
+        "id": "mood_01",
+        "query": "心情低落想聽療癒的歌",
+        "expected_features": {
+          "valence": [0.3, 0.7],
+          "energy": [0.2, 0.5]
+        },
+        "notes": "不要太悲傷也不要太歡樂，溫和療癒"
+      },
+      {
+        "id": "mood_02",
+        "query": "開心愉快的歌",
+        "expected_features": {
+          "valence": [0.7, 1.0]
+        },
+        "notes": "應該正面情緒高"
+      }
+    ],
+    
+    "模糊查詢": [
+      {
+        "id": "vague_01",
+        "query": "放鬆的音樂",
+        "expected_features": {
+          "energy": [0.1, 0.5],
+          "valence": [0.4, 0.8]
+        },
+        "notes": "應該低能量、正向但不激昂"
+      },
+      {
+        "id": "vague_02",
+        "query": "派對用的電子音樂",
+        "expected_features": {
+          "energy": [0.7, 1.0],
+          "danceability": [0.7, 1.0],
+          "genre_contains": ["electronic", "edm", "dance"]
+        },
+        "notes": "高能量、適合跳舞"
+      }
+    ]
+  }

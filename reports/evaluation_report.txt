@@ -1,0 +1,240 @@
+============================================================
+音樂推薦系統 Baseline 評估報告
+測試時間: 2025-12-01 18:00:29
+============================================================
+
+【總體統計】
+- 總測試數: 10 個查詢
+- 成功率: 100.0%
+- 平均回應時間: 13.18 秒
+- 重複推薦發生率: 60.0%
+- 平均特徵匹配度: 0.78
+
+【品質指標】
+- 平均多樣性分數: 0.64
+- 平均藝人多樣性: 0.79
+- 平均類型多樣性: 0.49
+
+============================================================
+【各類型查詢表現】
+============================================================
+
+情境查詢 (3 個):
+- 平均回應時間: 13.06 秒
+- 平均多樣性: 0.6
+- 重複率: 66.7% [警告]
+- 平均特徵匹配度: 0.89
+
+直接查詢 (3 個):
+- 平均回應時間: 14.02 秒
+- 平均多樣性: 0.57
+- 重複率: 33.3% [警告]
+- 平均特徵匹配度: 0.67
+
+情緒查詢 (2 個):
+- 平均回應時間: 13.48 秒
+- 平均多樣性: 0.65
+- 重複率: 100.0% [警告]
+- 平均特徵匹配度: 0.75
+
+模糊查詢 (2 個):
+- 平均回應時間: 11.77 秒
+- 平均多樣性: 0.8
+- 重複率: 50.0% [警告]
+- 平均特徵匹配度: 0.84
+
+============================================================
+【問題案例】
+============================================================
+
+1. [scenario_01] 我想找適合清晨散步用的歌
+   問題: 發現重複推薦
+
+2. [scenario_03] 運動健身時聽的快歌
+   問題: 發現重複推薦
+
+3. [direct_02] 搖滾音樂
+   問題: 發現重複推薦
+
+4. [mood_01] 心情低落想聽療癒的歌
+   問題: 發現重複推薦
+
+5. [mood_02] 開心愉快的歌
+   問題: 發現重複推薦
+
+6. [vague_01] 放鬆的音樂
+   問題: 發現重複推薦
+
+7. [direct_01] Taylor Swift 的歌
+   問題: 特徵匹配度低: 0.0
+
+============================================================
+【詳細結果】
+============================================================
+
+[scenario_01] 我想找適合清晨散步用的歌
+- 類別: 情境查詢
+- 回應時間: 13.92 秒
+- 特徵匹配度: 0.67 [尚可]
+- 多樣性分數: 0.7
+- 重複: 是 [警告]
+- 推薦歌曲:
+  1. Sleepwalking in the Rain - Chord Overstreet
+     類型: acoustic, 能量: 0.38, 節奏: 0.50
+  2. Hopeless Romance - Goodnight Fellows
+     類型: alternative, 能量: 0.35, 節奏: 0.64
+  3. 4am - Eden Elf;Ren Avel
+     類型: acoustic, 能量: 0.33, 節奏: 0.64
+  4. Hopeless Romance - Goodnight Fellows
+     類型: alt-rock, 能量: 0.35, 節奏: 0.64
+  5. Walking Target - Fitz and The Tantrums
+     類型: alternative, 能量: 0.96, 節奏: 0.65
+
+[scenario_02] 深夜讀書專注用的音樂
+- 類別: 情境查詢
+- 回應時間: 13.32 秒
+- 特徵匹配度: 1.0 [良好]
+- 多樣性分數: 0.6
+- 重複: 無
+- 推薦歌曲:
+  1. Nightbook - Ludovico Einaudi
+     類型: ambient, 能量: 0.29, 節奏: 0.60
+  2. Nocturnal - Joep Beving
+     類型: ambient, 能量: 0.02, 節奏: 0.22
+  3. Night - Ludovico Einaudi;Amsterdam Sinfonietta
+     類型: ambient, 能量: 0.18, 節奏: 0.21
+  4. Deep Sleep, Pt. 1 - Liquid Mind
+     類型: ambient, 能量: 0.13, 節奏: 0.16
+  5. The Night Café - Clint Mansell
+     類型: ambient, 能量: 0.31, 節奏: 0.34
+
+[scenario_03] 運動健身時聽的快歌
+- 類別: 情境查詢
+- 回應時間: 11.95 秒
+- 特徵匹配度: 1.0 [良好]
+- 多樣性分數: 0.5
+- 重複: 是 [警告]
+- 推薦歌曲:
+  1. Move on Up - The Dynamics
+     類型: afrobeat, 能量: 0.71, 節奏: 0.84
+  2. Move on Up - The Dynamics
+     類型: afrobeat, 能量: 0.77, 節奏: 0.84
+
+[direct_01] Taylor Swift 的歌
+- 類別: 直接查詢
+- 回應時間: 13.48 秒
+- 特徵匹配度: 0.0 [警告]
+- 多樣性分數: 0.5
+- 重複: 無
+- 推薦歌曲:
+  1. Teenage Dream - Sara Farell
+     類型: acoustic, 能量: 0.08, 節奏: 0.53
+  2. Dancing With A Stranger - Sara Farell
+     類型: acoustic, 能量: 0.18, 節奏: 0.59
+  3. How To Lose a Girl - Tyler Ward
+     類型: acoustic, 能量: 0.45, 節奏: 0.70
+  4. All Too Well - Jake's Version - John Elliott
+     類型: acoustic, 能量: 0.48, 節奏: 0.69
+  5. Love Song - Sara Bareilles
+     類型: acoustic, 能量: 0.79, 節奏: 0.58
+
+[direct_02] 搖滾音樂
+- 類別: 直接查詢
+- 回應時間: 14.07 秒
+- 特徵匹配度: 1.0 [良好]
+- 多樣性分數: 0.6
+- 重複: 是 [警告]
+- 推薦歌曲:
+  1. Rock and Roll - The Velvet Underground
+     類型: alternative, 能量: 0.74, 節奏: 0.49
+  2. Rock and Roll - The Velvet Underground
+     類型: alt-rock, 能量: 0.74, 節奏: 0.49
+  3. Dragula - Rob Zombie
+     類型: alt-rock, 能量: 0.98, 節奏: 0.58
+  4. Buddy Holly - Weezer
+     類型: alternative, 能量: 0.92, 節奏: 0.56
+  5. Love Will Tear Us Apart - Joy Division
+     類型: alternative, 能量: 0.90, 節奏: 0.52
+
+[direct_03] acoustic 風格的歌
+- 類別: 直接查詢
+- 回應時間: 14.52 秒
+- 特徵匹配度: 1.0 [良好]
+- 多樣性分數: 0.6
+- 重複: 無
+- 推薦歌曲:
+  1. 純風 - Kazuyoshi Saito
+     類型: acoustic, 能量: 0.87, 節奏: 0.73
+  2. Symphony - Acoustic - Thomas Daniel
+     類型: acoustic, 能量: 0.21, 節奏: 0.36
+  3. Mood - Acoustic - Adam Christopher
+     類型: acoustic, 能量: 0.29, 節奏: 0.75
+  4. Ghost - Acoustic - Jonah Baker
+     類型: acoustic, 能量: 0.07, 節奏: 0.49
+  5. Ghost - Acoustic - Ben Woodward
+     類型: acoustic, 能量: 0.17, 節奏: 0.42
+
+[mood_01] 心情低落想聽療癒的歌
+- 類別: 情緒查詢
+- 回應時間: 13.83 秒
+- 特徵匹配度: 0.5 [尚可]
+- 多樣性分數: 0.6
+- 重複: 是 [警告]
+- 推薦歌曲:
+  1. broken - lovelytheband
+     類型: alternative, 能量: 0.73, 節奏: 0.67
+  2. broken - lovelytheband
+     類型: alt-rock, 能量: 0.73, 節奏: 0.67
+  3. Hopeless Romance - Goodnight Fellows
+     類型: alternative, 能量: 0.35, 節奏: 0.64
+  4. The Remedy (I Won't Worry) - Jason Mraz
+     類型: acoustic, 能量: 0.87, 節奏: 0.59
+  5. Hopeless Romance - Goodnight Fellows
+     類型: alt-rock, 能量: 0.35, 節奏: 0.64
+
+[mood_02] 開心愉快的歌
+- 類別: 情緒查詢
+- 回應時間: 13.12 秒
+- 特徵匹配度: 1.0 [良好]
+- 多樣性分數: 0.7
+- 重複: 是 [警告]
+- 推薦歌曲:
+  1. Felicidad - Gondwana
+     類型: alternative, 能量: 0.67, 節奏: 0.74
+  2. Happy - Speedometer
+     類型: afrobeat, 能量: 0.61, 節奏: 0.59
+  3. Felicidad - Gondwana
+     類型: alt-rock, 能量: 0.67, 節奏: 0.74
+  4. Feel Good Inc. - Gorillaz
+     類型: alternative, 能量: 0.70, 節奏: 0.82
+  5. Are You Satisfied? - MARINA
+     類型: alternative, 能量: 0.71, 節奏: 0.67
+
+[vague_01] 放鬆的音樂
+- 類別: 模糊查詢
+- 回應時間: 12.21 秒
+- 特徵匹配度: 1.0 [良好]
+- 多樣性分數: 0.6
+- 重複: 是 [警告]
+- 推薦歌曲:
+  1. Way Down We Go - KALEO
+     類型: alternative, 能量: 0.51, 節奏: 0.49
+  2. Way Down We Go - KALEO
+     類型: alt-rock, 能量: 0.51, 節奏: 0.49
+  3. 7 Years - Eric Lumiere
+     類型: acoustic, 能量: 0.27, 節奏: 0.66
+  4. Life Goes On - Oliver Tree
+     類型: alternative, 能量: 0.49, 節奏: 0.70
+  5. Placeholder - Oliver Tree
+     類型: alternative, 能量: 0.70, 節奏: 0.68
+
+[vague_02] 派對用的電子音樂
+- 類別: 模糊查詢
+- 回應時間: 11.33 秒
+- 特徵匹配度: 0.67 [尚可]
+- 多樣性分數: 1.0
+- 重複: 無
+- 推薦歌曲:
+  1. Daft Punk Is Playing at My House - LCD Soundsystem
+     類型: alt-rock, 能量: 0.84, 節奏: 0.92
+
