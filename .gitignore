@@ -22,4 +22,45 @@ venv311/
 
 # ----------------------------------
 # Local data / Kaggle dataset
-# (dataset.csv is usually l
+# (dataset.csv is usually large & copyrighted)
+# ----------------------------------
+dataset.csv
+data/
+*.csv
+*.tsv
+*.parquet
+
+# ----------------------------------
+# Vector DB / Chroma / embeddings
+# (Never upload — too large + not portable)
+# ----------------------------------
+spotify_chroma_db/
+chroma_db/
+*.sqlite3
+*.duckdb
+*.npy
+
+# ----------------------------------
+# Logs / temp files
+# ----------------------------------
+*.log
+*.tmp
+
+# ----------------------------------
+# System files (Mac)
+# ----------------------------------
+.DS_Store
+
+# ----------------------------------
+# Model outputs / experiment results
+# (optional to keep these local)
+# ----------------------------------
+baseline_results.json
+evaluation_report.txt
+
+# ----------------------------------
+# PDF / output files
+# (keep the PDF only if it's required for your course)
+# ----------------------------------
+*.pdf
+
