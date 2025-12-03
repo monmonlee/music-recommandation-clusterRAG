@@ -8,10 +8,12 @@ __pycache__/
 *.so
 
 # ----------------------------------
-# Virtual environments
+# Python virtual environments
 # ----------------------------------
-venv/
-venv311/
+venv*/
+*/venv/
+testenv/
+env/
 .env
 *.env
 
@@ -25,10 +27,8 @@ venv311/
 # (dataset.csv is usually large & copyrighted)
 # ----------------------------------
 dataset.csv
-data/
 *.csv
 *.tsv
-*.parquet
 
 # ----------------------------------
 # Vector DB / Chroma / embeddings

@@ -80,7 +80,7 @@ def setup_environment_with_csv(csv_path,  limit=None):
     llm = ChatAnthropic(
         model="claude-sonnet-4-20250514", 
         temperature=0,
-        api_key=os.environ['CLAUDE_API_KEY']
+        api_key=os.environ['ANTHROPIC_API_KEY']
     )
     
     # 2. 初始化 Embedding（用 OpenAI）
@@ -222,7 +222,7 @@ if __name__ == "__main__":
     llm = ChatAnthropic(
         model="claude-sonnet-4-20250514",
         temperature=0,
-        api_key=os.environ['CLAUDE_API_KEY']
+        api_key=os.environ['ANTHROPIC_API_KEY']
     )
     
     # 載入已存在的向量資料庫

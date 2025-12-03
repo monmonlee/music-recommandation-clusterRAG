@@ -1,0 +1,326 @@
+
+============================================================
+時間: 2025-12-02 19:53:36
+查詢: 給我適合運動的音樂
+意圖: combined
+檢索關鍵字: 給我適合運動的音樂
+數值過濾: {}
+候選數量: 50
+過濾後數量: 50
+推薦歌曲:
+  1. 往事就是我的安慰 - 音樂磁場
+  2. 我真的受傷了 - Jacky Cheung
+  3. 我的朋友在那裡 - 風格童星組合
+  4. 你是我所有的回憶 - Johnny Yin
+  5. 愛是我們必經的辛苦 - Crispy脆樂團
+  6. 我們都是這樣長大的 - Sammi Cheng
+  7. 給我一首歌的時間 - Jay Chou
+  8. 我的背影 - Tai Chi
+  9. 她來聽我的演唱會 - Jacky Cheung
+  10. 愛我的時候 - Eric Chou;單依純
+
+Claude 推薦說明:
+推薦歌曲如上。
+
+============================================================
+時間: 2025-12-02 19:53:40
+查詢: Taylor Swift 的歌
+意圖: combined
+檢索關鍵字: Taylor Swift 的歌
+數值過濾: {}
+候選數量: 50
+過濾後數量: 50
+推薦歌曲:
+  1. Wildest Dreams - Taylor Swift
+  2. Lover - Taylor Swift
+  3. august - Taylor Swift
+  4. 愛的逃兵 - 電影 "愛的逃兵" 歌曲 - Alan Tam
+  5. 親愛的你 - Danny Chan
+  6. 沒名字的歌,無名字的你 - Leon Lai
+  7. 我的歌 - Ekin Cheng
+  8. cardigan - Taylor Swift
+  9. 我愛的人 - Jordan Chan
+  10. 你要的愛 - Penny Tai
+
+Claude 推薦說明:
+推薦歌曲如上。
+
+============================================================
+時間: 2025-12-02 19:53:44
+查詢: 悲傷的爵士樂
+意圖: combined
+檢索關鍵字: 悲傷的爵士樂
+數值過濾: {}
+候選數量: 50
+過濾後數量: 50
+推薦歌曲:
+  1. (......老頑固博士)(feat. Dr. Jean-Loup Ringot) - 吳青峰;Dr. Jean-Loup Ringot
+  2. 法蘭西多士 - 告五人
+  3. 認真的雪 - Joker Xue
+  4. 溫暖的所在 - 黃妃
+  5. 行走的鱼 - LaLa Hsu
+  6. 我真的受傷了 - Jacky Cheung
+  7. 我也難過的 - 吳林峰;謝芊彤
+  8. 我們都是這樣長大的 - Sammi Cheng
+  9. 情人節的早晨 - 于台煙
+  10. 是真的 - 詹雅雯
+
+Claude 推薦說明:
+推薦歌曲如上。
+
+============================================================
+時間: 2025-12-02 20:06:41
+查詢: 給我適合運動的音樂
+意圖: mood
+檢索關鍵字: workout music
+數值過濾: {'tempo_min': 120, 'tempo_max': 140, 'energy_min': 0.7, 'energy_max': None, 'danceability_min': 0.6, 'valence_min': None, 'valence_max': None}
+候選數量: 50
+過濾後數量: 9
+推薦歌曲:
+  1. Audio Assault - General Midi
+  2. Chime - Edit - Orbital
+  3. Kickbox - General Midi
+  4. Buzzer Beater - Jobii
+  5. Out of Space - Audio Bullys Remix - The Prodigy;Audio Bullys
+  6. Piano Loco - Radio Edit - DJ Luck & MC Neat
+  7. Heart Beat - Animato;Gaudium
+  8. Mass Distraction - The Breakfastaz
+
+Claude 推薦說明:
+這些歌曲都具有高能量和強勁的節奏，特別是breakbeat和trance類型的音樂，非常適合運動時提供動力和節奏感。這些歌曲的節奏大多在120-140 BPM之間，可以有效地激發運動的節奏和速度。
+
+推薦清單：
+1. Audio Assault
+2. Heart Beat
+3. Kickbox
+4. Out of Space
+5. Mass Distraction
+
+============================================================
+時間: 2025-12-02 20:06:50
+查詢: Taylor Swift 的歌
+意圖: artist
+檢索關鍵字: Taylor Swift
+數值過濾: {'tempo_min': None, 'tempo_max': None, 'energy_min': None, 'energy_max': None, 'danceability_min': None, 'valence_min': None, 'valence_max': None}
+候選數量: 50
+過濾後數量: 50
+推薦歌曲:
+  1. Don’t Blame Me - Taylor Swift
+  2. Love Story - Taylor Swift
+  3. Lover - Taylor Swift
+  4. You Belong With Me (Taylor’s Version) - Taylor Swift
+  5. willow - Taylor Swift
+  6. cardigan - Taylor Swift
+  7. Blank Space - Taylor Swift
+  8. august - Taylor Swift
+  9. Wildest Dreams - Taylor Swift
+  10. I Don’t Wanna Live Forever (Fifty Shades Darker) - ZAYN;Taylor Swift
+
+Claude 推薦說明:
+Taylor Swift 的歌曲以動人的歌詞和優美的旋律聞名，這些歌曲橫跨她不同音樂風格的專輯，從早期的鄉村流行到後來的另類流行和敘事性音樂。這個清單呈現了她音樂的多樣性，包含了不同節奏和能量的歌曲。
+
+推薦清單：
+1. Love Story (能量最高，經典代表作)
+2. You Belong With Me (節奏活潑，青春感十足)
+3. Blank Space (風格獨特，旋律洗腦)
+4. willow (氛圍柔和，聽感溫和)
+5. Wildest Dreams (情感豐富，節奏動人)
+
+============================================================
+時間: 2025-12-02 20:06:59
+查詢: 悲傷的爵士樂
+意圖: mood
+檢索關鍵字: sad jazz
+數值過濾: {'tempo_min': None, 'tempo_max': None, 'energy_min': None, 'energy_max': None, 'danceability_min': None, 'valence_min': 0, 'valence_max': 0.4}
+候選數量: 50
+過濾後數量: 29
+推薦歌曲:
+  1. In A Sentimental Mood - Duke Ellington;John Coltrane
+  2. In A Sentimental Mood - Ella Fitzgerald
+  3. Pity the Sadness - Paradise Lost
+  4. What A Wonderful World - Louis Armstrong
+  5. this is what sadness feels like - JVKE
+  6. For The Good Times - The Little Willies
+  7. The Calm Place - Zmeyev;Screen Jazzmaster;DreamBetter
+  8. jaded - sadeyes
+  9. Brand New Day - Living Room
+  10. Soul Mates - Jazzinuf;Etymology Records
+
+Claude 推薦說明:
+這些歌曲中的爵士樂作品充分體現了悲傷與柔和的音樂情感，特別是低能量的曲目如 "In A Sentimental Mood" 和 "For The Good Times" 更能表達出哀傷的氛圍。這些歌曲透過輕柔的節奏和深沉的音樂表達，能夠撫慰聽者的心靈，帶來一種溫柔的哀愁。
+
+推薦清單：
+1. In A Sentimental Mood - Duke Ellington;John Coltrane
+2. For The Good Times - The Little Willies
+3. The Calm Place - Zmeyev;Screen Jazzmaster;DreamBetter
+4. What A Wonderful World - Louis Armstrong
+5. In A Sentimental Mood - Ella Fitzgerald
+
+============================================================
+時間: 2025-12-03 19:02:04
+查詢: 給我和 Taylor Swift 類似的歌手 
+意圖: artist
+檢索關鍵字: Taylor Swift similar artists
+數值過濾: {'tempo_min': None, 'tempo_max': None, 'energy_min': None, 'energy_max': None, 'danceability_min': None, 'valence_min': None, 'valence_max': None}
+候選數量: 50
+過濾後數量: 50
+推薦歌曲:
+  1. You Belong With Me (Taylor’s Version) - Taylor Swift
+  2. Lover - Taylor Swift
+  3. willow - Taylor Swift
+  4. cardigan - Taylor Swift
+  5. Blank Space - Taylor Swift
+  6. august - Taylor Swift
+  7. Wildest Dreams - Taylor Swift
+  8. Don’t Blame Me - Taylor Swift
+  9. Love Story - Taylor Swift
+  10. I Don’t Wanna Live Forever (Fifty Shades Darker) - ZAYN;Taylor Swift
+
+Claude 推薦說明:
+Taylor Swift 的音樂風格以 pop 流行音樂為主，歌曲普遍節奏明快，能量較高，情感表達豐富且旋律動人。她的音樂常圍繞著愛情、成長和自我探索的主題，歌詞詩意且富有故事性。
+
+根據歌曲特徵，推薦以下類似風格的歌手：
+
+1. Katy Perry
+2. Selena Gomez
+3. Demi Lovato
+4. Olivia Rodrigo
+5. Halsey
+6. Lorde
+7. Ariana Grande
+8. Camila Cabello
+9. Ellie Goulding
+10. Birdy
+
+這些歌手在音樂類型、情感表達和流行風格上與 Taylor Swift 相似，相信會符合使用者的音樂品味。
+
+============================================================
+時間: 2025-12-03 19:44:58
+查詢: 給我適合運動的音樂
+意圖: mood
+檢索關鍵字: workout sports fitness
+數值過濾: {'tempo_min': 120, 'tempo_max': 140, 'energy_min': 0.7, 'energy_max': None, 'danceability_min': 0.6, 'valence_min': 0.5, 'valence_max': None}
+候選數量: 50
+過濾後數量: 7
+推薦歌曲:
+  1. Fun Phonics Fitness Song - Jack Hartmann
+  2. Bodywork - Original Mix - Stanton Warriors
+  3. Move Your Body (Elevation) [Club Mix] - Xpansions
+  4. Count to 100 (New Exercises) - Jack Hartmann
+  5. Handz Sky Up (feat. Sporty-O) - Original Mix - Baymont Bross;Sporty-O
+  6. Let's Bounce - Plump DJs
+  7. Move Your Body To The Beat - Reinier Zonneveld
+
+Claude 推薦說明:
+這些歌曲都具有高能量和穩定的節奏，非常適合運動時激勵身體節奏。不同類型的音樂可以滿足不同運動強度和個人喜好，從兒童健身歌曲到技術電子舞曲都有。
+
+推薦清單：
+1. Bodywork - Original Mix
+2. Handz Sky Up
+3. Move Your Body To The Beat
+4. Count to 100 (New Exercises)
+5. Move Your Body (Elevation) [Club Mix]
+
+============================================================
+時間: 2025-12-03 19:45:07
+查詢: Taylor Swift 的歌
+意圖: artist
+檢索關鍵字: Taylor Swift
+數值過濾: {'tempo_min': None, 'tempo_max': None, 'energy_min': None, 'energy_max': None, 'danceability_min': None, 'valence_min': None, 'valence_max': None}
+候選數量: 50
+過濾後數量: 50
+推薦歌曲:
+  1. Don’t Blame Me - Taylor Swift
+  2. Love Story - Taylor Swift
+  3. Lover - Taylor Swift
+  4. You Belong With Me (Taylor’s Version) - Taylor Swift
+  5. willow - Taylor Swift
+  6. cardigan - Taylor Swift
+  7. Blank Space - Taylor Swift
+  8. august - Taylor Swift
+  9. Wildest Dreams - Taylor Swift
+  10. I Don’t Wanna Live Forever (Fifty Shades Darker) - ZAYN;Taylor Swift
+
+Claude 推薦說明:
+Taylor Swift 是當代最具代表性的流行音樂歌手之一，這些歌曲涵蓋了她不同時期的音樂風格，從早期的鄉村流行到現代的另類流行。這些歌曲節奏感強、情感豐富，展現了她卓越的作詞作曲能力和多變的音樂風格。
+
+推薦清單：
+1. Love Story (節奏活潑、能量高)
+2. You Belong With Me (經典作品、青春活力)
+3. Blank Space (風格獨特、節奏感強)
+4. Wildest Dreams (情感深刻、節奏迷人)
+5. willow (另類風格、節奏柔和)
+
+============================================================
+時間: 2025-12-03 19:45:17
+查詢: 悲傷的爵士樂
+意圖: mood
+檢索關鍵字: sad jazz
+數值過濾: {'tempo_min': None, 'tempo_max': None, 'energy_min': None, 'energy_max': 0.4, 'danceability_min': None, 'valence_min': None, 'valence_max': 0.3}
+候選數量: 50
+過濾後數量: 20
+推薦歌曲:
+  1. In A Sentimental Mood - Duke Ellington;John Coltrane
+  2. In A Sentimental Mood - Ella Fitzgerald
+  3. What A Wonderful World - Louis Armstrong
+  4. this is what sadness feels like - JVKE
+  5. For The Good Times - The Little Willies
+  6. jaded - sadeyes
+  7. Solitude - Billie Holiday
+  8. Let Me Die - Lil Happy Lil Sad
+
+Claude 推薦說明:
+這些歌曲都捕捉了深沉的情感和悲傷的氛圍，不論是爵士樂還是悲傷類型的音樂，都展現出低能量和緩慢的節奏，能夠充分表達內心的哀愁和感傷。音樂不僅是聲音，更是情感的載體，這些歌曲將深刻的情緒完美地融入旋律中。
+
+推薦清單：
+1. Solitude - Billie Holiday
+2. For The Good Times - The Little Willies
+3. In A Sentimental Mood - Duke Ellington & John Coltrane
+4. this is what sadness feels like - JVKE
+5. jaded - sadeyes
+
+============================================================
+時間: 2025-12-03 20:25:46
+查詢: 給我適合運動的音樂
+意圖: mood
+檢索關鍵字: workout music
+數值過濾: {'tempo_min': 120, 'tempo_max': 160, 'energy_min': 0.7, 'energy_max': None, 'danceability_min': 0.6, 'valence_min': None, 'valence_max': None}
+候選數量: 50
+過濾後數量: 11
+推薦歌曲:
+  1. Audio Assault - General Midi
+  2. Like Clockwork - Spor
+  3. Chime - Edit - Orbital
+  4. Kickbox - General Midi
+  5. Context High - Original Mix - Ajja
+  6. Buzzer Beater - Jobii
+  7. Out of Space - Audio Bullys Remix - The Prodigy;Audio Bullys
+  8. Piano Loco - Radio Edit - DJ Luck & MC Neat
+  9. Heart Beat - Animato;Gaudium
+  10. Mass Distraction - The Breakfastaz
+
+Claude 推薦說明:
+這些歌曲都具有高能量和快節奏，非常適合運動時提供動力和節奏感。特別是breakbeat和drum-and-bass類型的歌曲，如Audio Assault和Like Clockwork，節奏強勁有力，能有效激發運動時的熱情和速度。這些音樂的BPM（每分鐘節拍數）大多在120-144之間，可以幫助運動者保持穩定且有活力的節奏。
+
+============================================================
+時間: 2025-12-03 20:25:57
+查詢: Taylor Swift 的歌
+意圖: artist
+檢索關鍵字: Taylor Swift
+數值過濾: {'tempo_min': None, 'tempo_max': None, 'energy_min': None, 'energy_max': None, 'danceability_min': None, 'valence_min': None, 'valence_max': None}
+候選數量: 50
+過濾後數量: 50
+推薦歌曲:
+  1. Don’t Blame Me - Taylor Swift
+  2. Love Story - Taylor Swift
+  3. Lover - Taylor Swift
+  4. You Belong With Me (Taylor’s Version) - Taylor Swift
+  5. willow - Taylor Swift
+  6. cardigan - Taylor Swift
+  7. Blank Space - Taylor Swift
+  8. august - Taylor Swift
+  9. Wildest Dreams - Taylor Swift
+  10. I Don’t Wanna Live Forever (Fifty Shades Darker) - ZAYN;Taylor Swift
+
+Claude 推薦說明:
+這些是Taylor Swift的精選歌曲，涵蓋了她多個專輯時期的代表作。這些歌曲風格多樣，從情感抒發的抒情歌曲到活力充沛的流行音樂都有，能展現出Taylor Swift出色的創作和演唱實力。無論你喜歡輕快的節奏還是深情的旋律，這個清單都能滿足不同聽歌的心情。
