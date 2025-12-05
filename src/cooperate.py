@@ -20,6 +20,7 @@ import gradio as gr
 from router import QueryRouter, QueryType
 import joblib
 import pandas as pd
+from collections import Counter
 
 
 # ============================================================================
@@ -692,12 +693,12 @@ def recommend_with_clustering(user_query, decision):
         
         # Step 4: 在 ChromaDB 搜尋，但只從同 cluster 的歌中選
         print("\n   [Step 4] 在 cluster 內做向量檢索...")
-        cluster_track_ids = set(same_cluster['track_id'].tolist())
+        cluster_track_ids = set(same_cluster['track_id'].tolist())  # ✅ 使用 same_cluster
         
         # 用目標歌曲做相似度搜尋
         all_results = collections['combined'].query(
-            query_embeddings=[embedding_model.encode(target_track).tolist()],
-            n_results=min(1000, len(cluster_track_ids) * 2)  # 多取一些
+            query_embeddings=[embedding_model.encode(target_track).tolist()],  # ✅ 使用 target_track
+            n_results=min(1000, len(cluster_track_ids) * 2)
         )
         
         # Step 5: 過濾出同 cluster 的歌
@@ -738,7 +739,7 @@ def recommend_with_clustering(user_query, decision):
         print("\n   [Step 1] 找目標歌手的歌曲...")
         artist_results = collections['artist'].query(
             query_embeddings=[embedding_model.encode(target_artist).tolist()],
-            n_results=30  # 取前 30 首該歌手的歌
+            n_results=30
         )
         
         if not artist_results['ids'][0]:
@@ -769,12 +770,16 @@ def recommend_with_clustering(user_query, decision):
         
         # Step 4: 從這些 clusters 推薦其他歌手的歌
         print("\n   [Step 3] 從主要 clusters 推薦其他歌手...")
-        cluster_songs = tracks_df[
-            tracks_df.apply(
-                lambda row: (row['track_genre'], row['sub_cluster']) in top_clusters,
-                axis=1
+        
+        # 建立條件遮罩
+        mask = pd.Series(False, index=tracks_df.index)
+        for genre, sub_cluster in top_clusters:
+            mask |= (
+                (tracks_df['track_genre'] == genre) & 
+                (tracks_df['sub_cluster'] == sub_cluster)
             )
-        ]
+        
+        cluster_songs = tracks_df[mask]
         
         # 排除原歌手的歌
         target_artist_lower = target_artist.lower()
@@ -785,31 +790,31 @@ def recommend_with_clustering(user_query, decision):
         print(f"   ✓ 候選歌曲數: {len(cluster_songs)}")
         
         # Step 5: 在 ChromaDB 搜尋，從候選中選擇
-        cluster_track_ids = set(cluster_songs['track_id'].tolist())
+        cluster_track_ids = set(cluster_songs['track_id'].tolist())  # ✅ 使用 cluster_songs
         
         all_results = collections['combined'].query(
-            query_embeddings=[embedding_model.encode(target_artist).tolist()],
+            query_embeddings=[embedding_model.encode(target_artist).tolist()],  # ✅ 使用 target_artist
             n_results=min(1000, len(cluster_track_ids) * 2)
         )
         
         # 過濾
         filtered_songs = []
-        seen_artists = set()
+        seen_artists = Counter()
         
         for meta in all_results['metadatas'][0]:
             if meta['track_id'] in cluster_track_ids:
                 artist = meta['artists']
                 
                 # 每個歌手最多 2 首（確保多樣性）
-                if seen_artists.count(artist) < 2:
+                if seen_artists[artist] < 2:
                     filtered_songs.append(meta)
-                    seen_artists.add(artist)
+                    seen_artists[artist] += 1
             
             if len(filtered_songs) >= CANDIDATE_SIZE:
                 break
         
         print(f"   ✓ 過濾後候選: {len(filtered_songs)} 首")
-        print(f"   ✓ 涵蓋 {len(set(seen_artists))} 位不同歌手")
+        print(f"   ✓ 涵蓋 {len(seen_artists)} 位不同歌手")
         
         # Step 6: 去重、取 Top K
         unique_songs = remove_duplicates(filtered_songs)
@@ -839,98 +844,6 @@ def recommend_with_clustering(user_query, decision):
     else:
         print("   → 未知查詢類型，降級到原邏輯")
         return recommend_original(user_query)
-
-def chat_recommend(user_message, session_id):
-    """
-    聊天式推薦（多輪對話）
-    
-    Args:
-        user_message: 使用者訊息
-        session_id: 對話 session ID
-        
-    Returns:
-        str: 推薦說明文字
-    """
-    # 初始化 session
-    if session_id not in chat_sessions:
-        chat_sessions[session_id] = []
-    
-    session_history = chat_sessions[session_id]
-    
-    # 收集已推薦過的歌曲
-    recommended_songs = set()
-    for h in session_history:
-        for song in h['songs'].split(', '):
-            recommended_songs.add(song.strip())
-    
-    # 意圖分析（帶歷史）
-    intent_result = analyze_intent_with_context(user_message, session_history)
-    
-    intent = intent_result['intent']
-    search_text = intent_result['search_text']
-    
-    # 向量檢索
-    if intent == 'artist':
-        results = search_by_artist(search_text, n=CANDIDATE_SIZE)
-    elif intent == 'track':
-        results = search_by_track(search_text, n=CANDIDATE_SIZE)
-    elif intent == 'genre':
-        results = search_by_genre(search_text, n=CANDIDATE_SIZE)
-    else:
-        results = search_combined(search_text, n=CANDIDATE_SIZE)
-    
-    # 如果有精確類型過濾
-    genre_filter = intent_result.get('genre_filter')
-    if genre_filter:
-        results = search_by_genre(genre_filter, n=CANDIDATE_SIZE)
-    
-    # 數值過濾
-    filters = intent_result.get('numeric_filters', {})
-    filters = {k: v for k, v in filters.items() if v is not None}
-    
-    if filters:
-        filtered_songs = apply_numeric_filter(results, filters)
-    else:
-        filtered_songs = results['metadatas'][0]
-    
-    if len(filtered_songs) < 5:
-        filtered_songs = results['metadatas'][0]
-    
-    # 去重
-    filtered_songs = remove_duplicates(filtered_songs)
-    
-    # 排除已推薦過的歌
-    new_songs = [s for s in filtered_songs 
-                 if s['track_name'] not in recommended_songs]
-    
-    # 如果新歌不夠，才用舊的補
-    if len(new_songs) < FINAL_RECOMMENDATION:
-        final_songs = new_songs + [
-            s for s in filtered_songs 
-            if s['track_name'] in recommended_songs
-        ][:FINAL_RECOMMENDATION - len(new_songs)]
-    else:
-        final_songs = new_songs[:FINAL_RECOMMENDATION]
-    
-    # 生成推薦
-    recommendation = generate_recommendation(user_message, final_songs)
-    
-    # 更新歷史
-    songs_summary = ", ".join([s['track_name'] for s in final_songs])
-    genre_summary = final_songs[0]['track_genre'] if final_songs else ""
-    session_history.append({
-        "user": user_message,
-        "genre": genre_summary,
-        "songs": songs_summary
-    })
-    chat_sessions[session_id] = session_history
-    
-    # 寫入 log
-    write_log(user_message, intent_result, len(results['metadatas'][0]),
-              len(filtered_songs), final_songs, recommendation)
-    
-    return recommendation
-
 
 # ============================================================================
 # Gradio 介面
